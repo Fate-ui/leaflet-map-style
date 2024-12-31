@@ -16,10 +16,12 @@ jobs:
 
       - name: Install pnpm
         if: steps.changed-files.outputs.only_changed != 'true'
-        uses: pnpm/action-setup@v2.4.0
+        uses: pnpm/action-setup@v3
 
       - name: Setup Node
         uses: actions/setup-node@v3
+        with:
+            node-version: '20.14.0'
 
       - name: Install dependencies
         run: pnpm install
