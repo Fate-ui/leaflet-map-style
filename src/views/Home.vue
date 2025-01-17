@@ -125,6 +125,16 @@ const mapLayersDark = {
     }),
     filter: 'grayscale(98%) invert(100%) sepia(20%) hue-rotate(180deg) saturate(1600%) brightness(80%) contrast(90%)',
   },
+  '高德/街道-暗色4': {
+    layer: L.tileLayer('//wprd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scl=1&style=7&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      maxNativeZoom: 18,
+      minZoom: 3,
+      attribution: '高德地图 AutoNavi.com',
+      subdomains: '1234',
+    }),
+    filter: 'invert(71%) sepia(77%) saturate(250%) hue-rotate(547deg) brightness(105%) contrast(253%)',
+  },
 }
 
 const type = ref('谷歌高德杂交/卫星')
