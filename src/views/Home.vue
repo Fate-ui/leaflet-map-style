@@ -208,4 +208,8 @@ function changeLayer(name: string, mapLayer: Record<string, { layer: L.Layer; fi
   //filter: grayscale(98%) invert(100%) sepia(20%) hue-rotate(180deg) saturate(1600%) brightness(80%) contrast(90%);
   filter: v-bind(filter);
 }
+
+.leaflet-control {
+  filter: v-bind(filter);
+}
 </style>
