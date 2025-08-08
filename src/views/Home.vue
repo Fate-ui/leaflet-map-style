@@ -133,7 +133,28 @@ const mapLayersDark = {
       attribution: '高德地图 AutoNavi.com',
       subdomains: '1234',
     }),
+
     filter: 'invert(71%) sepia(77%) saturate(250%) hue-rotate(547deg) brightness(105%) contrast(253%)',
+  },
+  '高德/街道-暗色5': {
+    layer: L.tileLayer('//wprd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scl=1&style=7&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      maxNativeZoom: 18,
+      minZoom: 3,
+      attribution: '高德地图 AutoNavi.com',
+      subdomains: '1234',
+    }),
+    filter: 'grayscale(112%) sepia(57%) invert(89%) saturate(376%)',
+  },
+  '高德/街道-暗色6': {
+    layer: L.tileLayer('//wprd02.is.autonavi.com/appmaptile?lang=zh_cn&size=1&scl=1&style=7&x={x}&y={y}&z={z}', {
+      maxZoom: 20,
+      maxNativeZoom: 18,
+      minZoom: 3,
+      attribution: '高德地图 AutoNavi.com',
+      subdomains: '1234',
+    }),
+    filter: 'grayscale(100%) sepia(51%) invert(100%) saturate(350%)',
   },
 }
 
