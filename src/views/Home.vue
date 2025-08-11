@@ -221,16 +221,13 @@ function changeLayer(name: string, mapLayer: Record<string, { layer: L.Layer; fi
 
 <style lang="scss">
 .leaflet-layer,
+.leaflet-control,
 .leaflet-control-zoom-in,
 .leaflet-control-zoom-out,
 .leaflet-control-attribution {
   //filter: invert(82%) sepia(100%) hue-rotate(190deg) saturate(400%);
   //filter: brightness(0.88) contrast(1.22) grayscale(0) hue-rotate(360deg) opacity(1) saturate(1.1) sepia(0.54) invert(0.9);
   //filter: grayscale(98%) invert(100%) sepia(20%) hue-rotate(180deg) saturate(1600%) brightness(80%) contrast(90%);
-  filter: v-bind(filter);
-}
-
-.leaflet-control {
   filter: v-bind(filter);
 }
 </style>
